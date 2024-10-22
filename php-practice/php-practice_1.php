@@ -1,6 +1,10 @@
 <?php
 // Q1 変数と文字列
 
+$name = '「安藤」';
+
+$message =  '私の名前は' . $name . 'です。';
+var_dump($message);
 
 // Q2 四則演算
 
