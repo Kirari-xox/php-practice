@@ -6,7 +6,16 @@ $name = '「安藤」';
 $message =  '私の名前は' . $name . 'です。';
 var_dump($message);
 
+
 // Q2 四則演算
+
+$num = 5 * 4;
+
+var_dump($num);
+
+$num /= 2;
+
+var_dump($num);
 
 
 // Q3 日付操作
