@@ -3,19 +3,14 @@
 
 $name = '「安藤」';
 
-$message =  '私の名前は' . $name . 'です。';
-var_dump($message);
+echo  '私の名前は' . $name . 'です。';
 
 
 // Q2 四則演算
 
-$num = 5 * 4;
+echo $num = 5 * 4;
 
-var_dump($num);
-
-$num /= 2;
-
-var_dump($num);
+echo $num /= 2;
 
 
 // Q3 日付操作
