@@ -117,6 +117,13 @@ hello ('安藤');
 
 // Q11 関数-2
 
+function calcTaxInPrice($price){
+  $taxInPrice = $price *1.1;
+  echo $price.'円の商品の税込価格は'.$taxInPrice.'円です。';
+}
+
+calcTaxInPrice (1000);
+
 
 // Q12 関数とif文
 
