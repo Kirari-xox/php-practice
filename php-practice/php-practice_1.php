@@ -127,6 +127,17 @@ calcTaxInPrice (1000);
 
 // Q12 関数とif文
 
+function distinguishNum($numbers){
+  if($numbers % 2 == 0){
+      echo $numbers.'は偶数です。';
+  } else {
+      echo $numbers.'は奇数です。';
+  }
+}
+
+distinguishNum (11);
+distinguishNum (24);
+
 
 // Q13 関数とswitch文
 
