@@ -99,7 +99,7 @@ foreach ($array as $x => $y) {
   if ($array === '東京都' || $array === '神奈川県' || $array === '千葉県' || $array === '埼玉県' || $array === '栃木県' || $array === '群馬県' || $array === '茨城県' ) {
   echo $x . 'の県庁所在地は、' . $y . 'です。'."\n";
   } else  {
-  echo  $x.'は関東地方ではありません。';
+  echo  $x.'は関東地方ではありません。'."\n";
 }
 }
 
@@ -140,5 +140,28 @@ distinguishNum (24);
 
 // Q13 関数とswitch文
 
+function evaluateGrade ($grade){
+  switch ($grade){
+      case 'A':
+      case 'B':
+          echo '合格です。';
+          break;
+          
+      case 'C':
+          echo '合格ですが追加課題があります。';
+          break;
+          
+      case 'D':
+          echo '不合格です。';
+          break;
+          
+      default:
+          echo '判定不明です。講師に問い合わせてください。';
+          break;
+  }
+}
+
+evaluateGrade ('A');
+evaluateGrade('E');
 
 ?>
