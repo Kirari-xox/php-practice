@@ -95,14 +95,13 @@ $array = [
 $array ['愛知県']  = '名古屋市';
 $array ['大阪府'] = '大阪市';
 
-if ($array === '東京都' || $array === '神奈川県' || $array === '千葉県' || $array === '埼玉県' || $array === '栃木県' || $array === '群馬県' || $array === '茨城県' ) {
-    foreach ($array as $x => $y) {
-    echo $x . 'の県庁所在地は、' . $y . 'です。'."\n";
-    }
-    } else  {
-    echo  "$xは関東地方ではありません。";
-  }
-
+foreach ($array as $x => $y) {
+  if ($array === '東京都' || $array === '神奈川県' || $array === '千葉県' || $array === '埼玉県' || $array === '栃木県' || $array === '群馬県' || $array === '茨城県' ) {
+  echo $x . 'の県庁所在地は、' . $y . 'です。'."\n";
+  } else  {
+  echo  $x.'は関東地方ではありません。';
+}
+}
 
 // Q10 関数-1
 
