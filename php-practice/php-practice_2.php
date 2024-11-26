@@ -35,11 +35,20 @@ $personalInfos = [
 echo $personalInfos[1]['name'].'の電話番号は'.$personalInfos[1]['tel'].'です。';
 
 //問題２
-foreach($personalInfos as $x => $y){
-    $x += 1;
-    echo $x.'番目の'.$y['name'].'のメールアドレスは'.$y['mail'].'で、電話番号は'.$y['tel'].'です。'."\n";
+foreach($personalInfos as $number => $value){
+    $number += 1;
+    echo $number.'番目の'.$value['name'].'のメールアドレスは'.$value['mail'].'で、電話番号は'.$value['tel'].'です。'."\n";
 }
 
+// 問題３
+$ageList = [25, 30, 18];
+foreach($personalInfos as  $key => $value ){
+    $personalInfos[0]['ago'] =$ageList[0];
+    $personalInfos[1]['ago'] =$ageList[1];
+    $personalInfos[2]['ago'] =$ageList[2];
+}
+
+var_dump($personalInfos);
 
 
 // Q3 オブジェクト-1
