@@ -12,6 +12,7 @@ for ($x = 1; $x <= 100; $x++) {
   }
 }
 
+
 // Q2 多次元連想配列
 $personalInfos = [
   [
@@ -32,6 +33,12 @@ $personalInfos = [
 ];
 //問題１
 echo $personalInfos[1]['name'].'の電話番号は'.$personalInfos[1]['tel'].'です。';
+
+//問題２
+foreach($personalInfos as $x => $y){
+    $x += 1;
+    echo $x.'番目の'.$y['name'].'のメールアドレスは'.$y['mail'].'で、電話番号は'.$y['tel'].'です。'."\n";
+}
 
 
 
