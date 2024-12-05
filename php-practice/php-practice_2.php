@@ -107,4 +107,13 @@ $day = new DateTime();
 $minus_1month = $day->modify('-1 month')->format('Y-m-d');
 echo $minus_1month;
 
+// 問題２
+
+$day = new DateTime();
+$day2 = new DateTime('1992-4-25');
+$diff = $day ->diff($day2);
+
+echo 'あの日から'.$diff->days.'日経過しました。';
+
+
 ?>
