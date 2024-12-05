@@ -53,6 +53,27 @@ var_dump($personalInfos);
 
 // Q3 オブジェクト-1
 
+class Student
+{
+    public $studentId;
+    public $studentName;
+
+    public function __construct($id, $name)
+    {
+        $this->studentId = $id;
+        $this->studentName = $name;
+    }
+
+    public function attend()
+    {
+        echo '授業に出席しました。';
+    }
+}
+
+$yamada = new Student(120,'山田');
+
+echo '学籍番号'.$yamada->studentId.'番の生徒は'.$yamada->studentName.'です。';
+
 
 // Q4 オブジェクト-2
 
