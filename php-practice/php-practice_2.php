@@ -100,4 +100,11 @@ $yamada->attend('PHP');
 
 
 // Q5 定義済みクラス
+
+// 問題１
+
+$day = new DateTime();
+$minus_1month = $day->modify('-1 month')->format('Y-m-d');
+echo $minus_1month;
+
 ?>
