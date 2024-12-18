@@ -8,9 +8,11 @@ echo  '私の名前は' . $name . 'です。';
 
 // Q2 四則演算
 
-echo $num = 5 * 4;
+$num = 5 * 4;
+echo $num;
 
-echo $num /= 2;
+$num /= 2;
+echo $num;
 
 
 // Q3 日付操作
@@ -51,13 +53,9 @@ $array = [
   '群馬県' => '前橋市',
   '茨城県' => '水戸市'
 ];
-echo $array ['東京都'],"\n",
-     $array ['神奈川県'],"\n", 
-     $array ['千葉県'],"\n",
-     $array ['埼玉県'],"\n",
-     $array ['栃木県'],"\n",
-     $array ['群馬県'],"\n",
-     $array ['茨城県'],"\n";
+foreach ($array as $x => $y) {
+  echo $y."\n";
+  }
 
 
 // Q8 連想配列-2
