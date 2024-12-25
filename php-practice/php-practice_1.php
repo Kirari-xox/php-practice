@@ -72,8 +72,7 @@ $array = [
 
     foreach ($array as $x => $y) {
         if ($x == '埼玉県'){
-            echo $x . 'の県庁所在地は、' . $y . 'です。';
-            
+            echo $x . 'の県庁所在地は、' . $y . 'です。';   
         }
     }
 
@@ -101,65 +100,59 @@ foreach ($array as $x => $y) {
 }
 }
 
-// Q10 関数-1
-
-function hello ($name)
+Q10
+function hello($name)
 {
-    echo $name.'さん、こんにちは。'."\n";
+  return $name.'さん、こんにちは。'."\n";
 }
 
-hello ('金谷');
-hello ('安藤');
+echo hello('金谷');
+echo hello('安藤');
 
 
-// Q11 関数-2
-
+Q11
 function calcTaxInPrice($price){
-  $taxInPrice = $price *1.1;
-  echo $price.'円の商品の税込価格は'.$taxInPrice.'円です。';
+$taxInPrice = $price *1.1;
+  return $price.'円の商品の税込価格は'.$taxInPrice.'円です。';
 }
 
-calcTaxInPrice (1000);
+echo calcTaxInPrice (1000);
 
 
-// Q12 関数とif文
-
+Q12
 function distinguishNum($numbers){
   if($numbers % 2 == 0){
-      echo $numbers.'は偶数です。';
+    return $numbers.'は偶数です。';
   } else {
-      echo $numbers.'は奇数です。';
+    return $numbers.'は奇数です。';
   }
 }
 
-distinguishNum (11);
-distinguishNum (24);
+echo distinguishNum (11);
+echo distinguishNum (24);
 
 
-// Q13 関数とswitch文
-
+Q13
 function evaluateGrade ($grade){
-  switch ($grade){
-      case 'A':
-      case 'B':
-          echo '合格です。';
-          break;
-          
-      case 'C':
-          echo '合格ですが追加課題があります。';
-          break;
-          
-      case 'D':
-          echo '不合格です。';
-          break;
-          
-      default:
-          echo '判定不明です。講師に問い合わせてください。';
-          break;
-  }
+switch ($grade){
+  case 'A':
+  case 'B':
+      return '合格です。';
+
+  case 'C':
+      return '合格ですが追加課題があります。';
+      
+  case 'D':
+      return '不合格です。';
+      
+  default:
+      return '判定不明です。講師に問い合わせてください。';
+}
 }
 
-evaluateGrade ('A');
-evaluateGrade('E');
+echo evaluateGrade ('A');
+echo evaluateGrade('E');
+
+
 
 ?>
